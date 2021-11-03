@@ -1,0 +1,88 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc} % mindenképp maradjon az utf-8 kódolás
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics} % grafikus elemek, képek berakásához
+\usepackage{blindtext}
+%\usepackage{hyperref} % PDF hivatkozásokhoz kell
+\usepackage[hang]{caption}
+\usepackage{xcolor}
+%\usepackage[affil-it]{authblk}
+
+%\definecolor{rosewood}{rgb}{0.6, 0.0, 0.04}
+%\definecolor{indigo(dye)}{rgb}{0.0, 0.25, 0.42}
+
+\usetheme{Madrid}	% téma
+\usefonttheme{serif}	% gyönyörű talpas betűtípus
+
+\beamertemplatenavigationsymbolsempty % a pdf-be ágyazott navigációs gombok kikapcsolása
+
+\title{CÍM}			% cím
+\subtitle{alcím} 	% alcím
+
+\date{\today}
+
+\author{Szerző}	% szerző
+
+\institute{Institute} % intézmény vagy más infó a szerzőről
+
+\begin{document}
+
+\maketitle	% címoldal
+
+\begin{frame}
+	\frametitle{Az 1. dia címe}
+	\framesubtitle{Az 1. dia alcíme}
+	\begin{columns}	
+		\column{0.48\textwidth}
+			\blindtext
+		\column{0.48\textwidth}
+			Lehetségesek ilyen átalakulások ütközések hatására:
+			\begin{align*}
+				Xe^+ + e^- \quad \longleftrightarrow \quad Xe
+			\end{align*}		
+			A töltött részecskék tere és a külső elektromágneses tér együtt hat a töltött részecskék mozgására.
+			\begin{align*}
+				\Sigma Q = 0
+			\end{align*}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Az egydimenziós modell}
+	\begin{columns}
+		\column{0.48\textwidth}
+			A következő egyszerűsítésekkel jutunk 3D-ből az 1D plazmához: \\
+			\begin{itemize}
+				\item A töltetlen $Xe$ részecskéket elhagyjuk
+				\item Az ütközésektől eltekintünk
+				\item Csak az elektronok mozgását vizsgáljuk
+				\item Pontszerű részecskék helyett felületi töltéssűrűséggel rendelkező, az $x$ tengelyre merőleges lapok
+				\item A pozitív töltésű $Xe^+$ ionokat helyhez kötött háttér-töltéssűrűségnek vesszük
+			\end{itemize}
+		\column{0.48\textwidth}
+			\begin{itemize}
+				\item A szimulációs tér egydimenziós és ciklikus, $x=0 \Longleftrightarrow x=N_g$
+				\item A külső elektromos teret 0-nak vesszük
+				\item A mégneses térnek nincs hatása 1D-ben
+			\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{A Particle-Mesh módszer}
+	\begin{columns}
+		\column{0.48\textwidth}
+			Egy kis random szöveg
+		\column{0.48\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{/home/g/Pictures/nap.png}
+			\end{figure}
+	\end{columns}
+\end{frame}
+
+\end{document}
